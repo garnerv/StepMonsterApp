@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="finalproject.gv4353jdo589.stepmonster">
+
     <uses-feature
-        android:name="@string/step_detector" android:required="false"/>
+        android:name="@string/step_detector"
+        android:required="false" />
     <uses-feature
-        android:name="@string/step_counter" android:required="false"/>
+        android:name="@string/step_counter"
+        android:required="false" />
 
     <application
         android:allowBackup="true"
@@ -19,6 +22,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Login" />
+        <activity android:name=".Register" />
+        <activity android:name=".BattleScreen" />
+        <activity android:name=".ProfileView" />
+        <activity android:name=".ChooseMonster" />
+        <activity android:name=".Achievements"></activity>
     </application>
 
 </manifest>
