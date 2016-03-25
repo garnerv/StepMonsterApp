@@ -28,6 +28,7 @@ public class MainActivity extends Activity implements SensorEventListener {
         activityRunning = true;
         Sensor countSensor = sensorManager.getDefaultSensor(Sensor.TYPE_STEP_COUNTER);
         if (countSensor != null) {
+            Toast.makeText(this, "Step Detector Available!", Toast.LENGTH_LONG).show();
             sensorManager.registerListener(this, countSensor, SensorManager.SENSOR_DELAY_UI);
         } else {
             Toast.makeText(this, "Count sensor not available!", Toast.LENGTH_LONG).show();
